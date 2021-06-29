@@ -1,17 +1,18 @@
 import Layout from '../src/components/Layout';
-import styles from '../styles/Home.module.css'
+import TextBoxes from '../src/components/TextBoxes';
+import SyomHeader from '../src/components/Header';
+import { Box } from '@material-ui/core';
 
 const Home = () => {
   return (
-    <Layout>
-      <h1 className={styles.title}>
-        Syom
-      </h1>
-      <p className={styles.description}>
-        Langt liv for klærne
-      </p>
-
-    </Layout>
+    <>
+      <Layout>
+        <SyomHeader />
+        <Box mt={20}>
+          <TextBoxes />
+        </Box>
+      </Layout>
+    </>
   )
 }
 

@@ -1,22 +1,32 @@
 import { createMuiTheme } from "@material-ui/core";
 
-const textColor = "rgba(0, 0, 0, 0.9)";
+const grey = "#808483";
+//const dark_grey = "#4D4D4D";
+const light_grey = "#CCCCCC";
+//const lighter_gray = "#EBEBEB";
+const beige = "#C1BEA3";
+
+const green = "#3ACC9F";
+
 
 export default createMuiTheme({
     palette: {
-        primary: { main: "#91FA8D" },
+        primary: { main: grey },
+        secondary: { main: green },
         text: {
-            primary: textColor,
-            secondary: textColor,
-            disabled: textColor,
-            hint: textColor
-        }
+            primary: grey,
+            secondary: green,
+            disabled: light_grey,
+            hint: beige
+        },
+        background: { default: "#fff" }
     },
     typography: {
         fontSize: 12,
-        fontFamily: ['"Raleway"', "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif"].join(',')
+        fontFamily: ["Helvetica Neue", '"Raleway"', "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(',')
     },
+
     overrides: {
         MuiTooltip: {
             tooltip: {

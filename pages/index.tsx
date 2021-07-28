@@ -1,19 +1,16 @@
-import Layout from '../src/components/Layout';
-import TextBoxes from '../src/components/TextBoxes';
-import SyomHeader from '../src/components/Header';
-import { Box } from '@material-ui/core';
+import { Box } from "@material-ui/core";
 
-const Home = () => {
-  return (
-    <>
-      <Layout>
+import Layout from "../src/components/Layout";
+import TextBoxes from "../src/components/TextBoxes";
+import SyomHeader from "../src/components/Header";
+
+const Home = () => (
+    <Layout>
         <SyomHeader />
         <Box mt={20}>
-          <TextBoxes />
+            <TextBoxes />
         </Box>
-      </Layout>
-    </>
-  )
-}
+    </Layout>
+);
 
 export default Home;

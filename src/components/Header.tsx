@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Box, Container, Typography } from "@material-ui/core";
-import Image from "next/image";
 
 import Scrolldown from "./Scrolldown";
 
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
         "&::before": {
             content: "''",
             display: "block",
-            background: "url(img/stock/sewdoll.jpg)",
+            background: "url(img/stock/handssewing.png)",
             backgroundSize: "cover",
             opacity: 0.5,
             top: 0,
@@ -32,11 +31,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
         width: "100%",
         background: "linear-gradient(0, white, transparent)",
         margin: "auto",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
+        textAlign: "center"
     }
 }));
 
@@ -45,19 +40,20 @@ const SyomHeader: FC = () => {
 
     return (
         <Box className={classes.imageContainer} >
-            <Box className={classes.fader} py={5}>
+            <Box className={classes.fader} py={10} >
                 <Container>
-                    <img src="/img/elements/logo1.png" alt="SYOM" style={{ height: "100px" }} />
-
-                    <Box py={5}>
+                    <Box>
+                        <img src="/img/elements/logo1.png" alt="SYOM" style={{ height: "150px" }} />
+                    </Box>
+                    <Box paddingTop={4}>
                         <Typography component="p" variant="h5">
-              Langt liv for klærne
+                            Langt liv for klærne
                         </Typography>
                     </Box>
-
-                    <img src="/img/elements/appview.png" alt="SYOM" style={{ height: "300px" }} />
-
-                    <hr />
+                    <Box>
+                        <img src="/img/elements/appview.png" alt="SYOM" style={{ height: "50vh" }} />
+                    </Box>
+                    <hr style={{ border: "none", borderTop: "solid #E4E4E4", borderWidth: 3 }} />
                     <Typography component="h1" variant="h2">
             Hvorfor SYOM?
                     </Typography>

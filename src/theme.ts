@@ -1,13 +1,12 @@
 import { createMuiTheme } from "@material-ui/core";
 
 const grey = "#808483";
-//const dark_grey = "#4D4D4D";
-const light_grey = "#CCCCCC";
-//const lighter_gray = "#EBEBEB";
+// const dark_grey = "#4D4D4D";
+const lightGrey = "#CCCCCC";
+// const lighter_gray = "#EBEBEB";
 const beige = "#C1BEA3";
 
 const green = "#3ACC9F";
-
 
 export default createMuiTheme({
     palette: {
@@ -16,15 +15,15 @@ export default createMuiTheme({
         text: {
             primary: grey,
             secondary: green,
-            disabled: light_grey,
+            disabled: lightGrey,
             hint: beige
         },
         background: { default: "#fff" }
     },
     typography: {
         fontSize: 12,
-        fontFamily: ["Helvetica Neue", '"Raleway"', "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(',')
+        fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(",")
     },
 
     overrides: {

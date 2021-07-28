@@ -1,15 +1,14 @@
 import { Box } from "@material-ui/core";
 
 import Layout from "../src/components/Layout";
-import TextBoxes from "../src/components/TextBoxes";
-import SyomHeader from "../src/components/Header";
+import SyomHeader from "../src/components/BetaPage/Header";
+import SectionTwo from "../src/components/BetaPage/SectionTwo";
+
 
 const Home = () => (
     <Layout>
         <SyomHeader />
-        <Box mt={20}>
-            <TextBoxes />
-        </Box>
+        <SectionTwo />
     </Layout>
 );
 

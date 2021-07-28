@@ -7,16 +7,18 @@ const lightGrey = "#CCCCCC";
 const beige = "#C1BEA3";
 
 const green = "#3ACC9F";
+const blue = "#48AFEC";
 
 export default createMuiTheme({
     palette: {
         primary: { main: grey },
         secondary: { main: green },
+        info: { main: blue },
         text: {
             primary: grey,
             secondary: green,
             disabled: lightGrey,
-            hint: beige
+            hint: beige,
         },
         background: { default: "#fff" }
     },

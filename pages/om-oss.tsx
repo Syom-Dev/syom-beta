@@ -1,13 +1,12 @@
 import Layout from '../src/components/Layout';
-import styles from '../styles/Home.module.css'
 
 const Home = () => {
   return (
     <Layout>
-      <h1 className={styles.title}>
+      <h1 >
         Om oss
       </h1>
-      <p className={styles.description}>
+      <p>
         Vi er Syom
       </p>
 

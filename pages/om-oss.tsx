@@ -1,17 +1,15 @@
-import Layout from '../src/components/Layout';
+import Layout from "../src/components/Layout";
 
-const Home = () => {
-  return (
-    <Layout>
-      <h1 >
+const Home = () => (
+  <Layout>
+    <h1 >
         Om oss
-      </h1>
-      <p>
+    </h1>
+    <p>
         Vi er Syom
-      </p>
+    </p>
 
-    </Layout>
-  )
-}
+  </Layout>
+);
 
 export default Home;

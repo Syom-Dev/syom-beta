@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Box, Typography } from "@material-ui/core";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 import Image from "next/image";
 
 interface TextImageBoxProps {
@@ -10,7 +10,7 @@ interface TextImageBoxProps {
   align?: "left" | "right";
 }
 
-const useStyles = makeStyles((theme: Theme) => createStyles({
+const useStyles = makeStyles(() => createStyles({
   imageBox: {
     width: "200px",
     borderRadius: "50%",

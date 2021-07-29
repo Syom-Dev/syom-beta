@@ -34,16 +34,17 @@ export default createMuiTheme({
         fontSize: 11
       }
     }
-  },
-  contentHeight: "calc(100vh - 0px)" // Subtract a nav potentially
+  }
+  // contentHeight: "calc(100vh - 0px)" // Subtract a nav potentially
 });
 
-declare module "@material-ui/core/styles/createMuiTheme" {
-  interface Theme {
-    contentHeight: string;
-  }
-  // allow configuration using `createMuiTheme`
-  interface ThemeOptions {
-    contentHeight?: string;
-  }
-}
+// declare module "@material-ui/core/styles/createMuiTheme" {
+//   interface Theme {
+//     contentHeight: string;
+//   }
+//   // allow configuration using `createMuiTheme`
+//   interface ThemeOptions {
+//     contentHeight?: string;
+//   }
+// }
+

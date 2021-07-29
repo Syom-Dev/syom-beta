@@ -16,9 +16,8 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
   fader: {
     height: "100%",
-    minHeight: theme.contentHeight,
     width: "100%",
-    background: "linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%)",
+    background: "linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.95) 60%, rgba(255,255,255,1) 100%)",
     margin: "auto",
     textAlign: "center"
   },

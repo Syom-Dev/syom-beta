@@ -10,40 +10,40 @@ const green = "#3ACC9F";
 const blue = "#48AFEC";
 
 export default createMuiTheme({
-    palette: {
-        primary: { main: grey },
-        secondary: { main: green },
-        info: { main: blue },
-        text: {
-            primary: grey,
-            secondary: green,
-            disabled: lightGrey,
-            hint: beige,
-        },
-        background: { default: "#fff" }
+  palette: {
+    primary: { main: grey },
+    secondary: { main: green },
+    info: { main: blue },
+    text: {
+      primary: grey,
+      secondary: green,
+      disabled: lightGrey,
+      hint: beige
     },
-    typography: {
-        fontSize: 12,
-        fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(",")
-    },
+    background: { default: "#fff" }
+  },
+  typography: {
+    fontSize: 12,
+    fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(",")
+  },
 
-    overrides: {
-        MuiTooltip: {
-            tooltip: {
-                fontSize: 11
-            }
-        }
-    },
-    contentHeight: "calc(100vh - 0px)" // Subtract a nav potentially
+  overrides: {
+    MuiTooltip: {
+      tooltip: {
+        fontSize: 11
+      }
+    }
+  },
+  contentHeight: "calc(100vh - 0px)" // Subtract a nav potentially
 });
 
 declare module "@material-ui/core/styles/createMuiTheme" {
-    interface Theme {
-        contentHeight: string;
-    }
-    // allow configuration using `createMuiTheme`
-    interface ThemeOptions {
-        contentHeight?: string;
-    }
+  interface Theme {
+    contentHeight: string;
+  }
+  // allow configuration using `createMuiTheme`
+  interface ThemeOptions {
+    contentHeight?: string;
+  }
 }

@@ -16,7 +16,7 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box pt={4} pb={3}>
-            <Typography component="p" variant="h6">
+            <Typography component="p" variant="h5">
               Langt liv for klærne
             </Typography>
           </Box>
@@ -35,7 +35,7 @@ const SyomHeader: FC = () => {
           <Container>
 
             <Box pb={4}>
-              <Typography component="h1" variant="h4">
+              <Typography component="h1" variant="h2">
                 Hvorfor SYOM?
               </Typography>
             </Box>

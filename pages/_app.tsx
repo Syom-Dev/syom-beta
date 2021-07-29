@@ -1,10 +1,9 @@
-import type { AppProps /*, AppContext */ } from 'next/app'
-import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import type { AppProps /* , AppContext */ } from "next/app";
+import React from "react";
+import { ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-import theme from '../src/theme';
-
+import theme from "../src/theme";
 
 const SyomBeta = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
@@ -14,4 +13,4 @@ const SyomBeta = ({ Component, pageProps }: AppProps) => (
   </ThemeProvider>
 );
 
-export default SyomBeta
+export default SyomBeta;

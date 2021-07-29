@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+## Because vercel runs yarn:
+package-lock.json
+
 # testing
 /coverage
 

@@ -43,7 +43,7 @@ const SyomHeader: FC = () => {
             </Typography>
 
             <Box pt={4}>
-              <img src="/img/elements/logo2.png" alt="SYOM" style={{ height: "40px" }} />
+              <img src="/img/elements/logo1.svg" alt="SYOM" style={{ height: "40px" }} />
             </Box>
           </Container>
           {/* <Scrolldown /> */}

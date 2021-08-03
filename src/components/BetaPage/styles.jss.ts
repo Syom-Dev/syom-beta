@@ -1,4 +1,5 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { Transform } from "@material-ui/icons";
 
 export const useStyles = makeStyles((theme: Theme) => createStyles({
   imageContainer: {
@@ -37,5 +38,21 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     top: "-50px",
     left: 0,
     right: 0
+  },
+  button: {
+      margin: theme.spacing(1),
+      borderRadius: "5em",
+      background: "#3ACC9F",
+      textTransform: "none",
+      color: "#FFFFFF",
+      alignItems: "center",
+      fontWeight: "bold",
+      fontSize: "15px"
+  },
+  input: {
+      display: "none"
+  },
+  footer: {
+      backgroundColor: "#FFFFFF"
   }
 }));

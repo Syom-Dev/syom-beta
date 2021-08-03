@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Container, Typography, TextField } from "@material-ui/core";
+import { Box, Container, Typography, TextField, Button } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
 
@@ -23,13 +23,17 @@ const SectionThree: FC = () => {
           </Typography>
         </Box>
         <Box pt={3}>
-          <form noValidate autoComplete="off">
             <TextField id="outlined-search" label="Navn Navnesen" type="search" variant="outlined" />
             &nbsp;&nbsp;
             <TextField id="outlined-search"
                        label="navn.navnesen@epost.no"
                        type="search" variant="outlined" helperText="Ugyldig epostadresse"/>
-          </form>
+        </Box>
+        <Box pt={5}>
+          <Button variant="contained" className={classes.button}>Ja, jeg vil bidra!</Button>
+        </Box>
+        <Box pt={10}>
+              <img src="img/elements/logo3.svg" alt="SYOM" />
         </Box>
       </Container>
     </Box >

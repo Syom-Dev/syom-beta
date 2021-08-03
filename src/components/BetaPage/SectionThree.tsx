@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Container, Typography } from "@material-ui/core";
+import { Box, Container, Typography, TextField } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
 
@@ -9,7 +9,7 @@ const SectionThree: FC = () => {
   return (
     <Box className={classes.brownContainer} py={10} textAlign="center" pb={10}>
       <Box className={classes.absoluteAppIcon}>
-        <img src="/img/elements/appicon.png" alt="appikon" style={{ height: "120px" }} />
+        <img src="/img/elements/appicon.svg" alt="appikon" style={{ height: "120px" }} />
       </Box>
       <Container maxWidth="sm">
         <Typography component="h2" variant="h3">... men skal det bli bra, trenger vi deg :)</Typography>
@@ -23,7 +23,13 @@ const SectionThree: FC = () => {
           </Typography>
         </Box>
         <Box pt={3}>
-          form here
+          <form noValidate autoComplete="off">
+            <TextField id="outlined-search" label="Navn Navnesen" type="search" variant="outlined" />
+            &nbsp;&nbsp;
+            <TextField id="outlined-search"
+                       label="navn.navnesen@epost.no"
+                       type="search" variant="outlined" helperText="Ugyldig epostadresse"/>
+          </form>
         </Box>
       </Container>
     </Box >

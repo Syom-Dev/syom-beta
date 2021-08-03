@@ -12,9 +12,8 @@ const SyomHeader: FC = () => {
       <Box className={classes.fader} py={10} >
         <Container maxWidth="sm">
           <Box>
-            <img src="/img/elements/logo1.png" alt="SYOM" style={{ height: "60px" }} />
+            <img src="/img/elements/logo1.svg" alt="Syom" />
           </Box>
-
           <Box pt={4} pb={3}>
             <Typography component="p" variant="h5">
               Langt liv for klærne
@@ -22,7 +21,7 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box>
-            <img src="/img/elements/appview.png" alt="SYOM" style={{ maxHeight: "300px" }} />
+            <img src="/img/elements/appview.svg" alt="SYOM" style={{ maxHeight: "300px" }} />
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>

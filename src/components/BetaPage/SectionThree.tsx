@@ -23,11 +23,35 @@ const SectionThree: FC = () => {
           </Typography>
         </Box>
         <Box pt={3}>
-            <TextField id="outlined-search" label="Navn Navnesen" type="search" variant="outlined" />
-            &nbsp;&nbsp;
-            <TextField id="outlined-search"
+            <TextField id="name"
+                      label="Navn Navnesen"
+                      type="search"
+                      variant="filled"
+                      className= {classes.textField}
+                      InputProps={{
+                        classes: {
+                          root: classes.textFieldInput,
+                          focused: classes.focused
+                        }
+                      }}
+            />
+        </Box>
+        <Box>
+            <TextField error
+                       id="epostAddress"
                        label="navn.navnesen@epost.no"
-                       type="search" variant="outlined" helperText="Ugyldig epostadresse"/>
+                       type="search"
+                       variant="filled"
+                       helperText="Ugyldig epostadresse"
+                       className= {classes.textField}
+                       InputProps={{
+                        classes: {
+                          root: classes.textFieldInput,
+                          focused: classes.focused
+                        },
+                        inputMode: "numeric"
+                       }}
+            />
         </Box>
         <Box pt={5}>
           <Button variant="contained" className={classes.button}>Ja, jeg vil bidra!</Button>

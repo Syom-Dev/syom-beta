@@ -53,6 +53,11 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
       display: "none"
   },
   footer: {
-      backgroundColor: "#FFFFFF"
+      alignItems: "center",
+      justifyContent: "center",
+      display: "flex",
+      paddingTop: "8pt",
+      paddingBottom: "8pt",
+      background: "#C1BEA3"
   }
 }));

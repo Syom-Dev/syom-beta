@@ -89,7 +89,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
   googleForm: {
     position: "absolute",
-    top: "-169px",
+    top: "-145px",
     left: "0",
     right: "0"
   },
@@ -109,7 +109,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     googleForm: {
       position: "absolute",
-      top: "-179px"
+      top: "-144px"
     }
   }
 }));

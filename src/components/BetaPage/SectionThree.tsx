@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Box, Container, Typography, TextField, Button } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
+import { GoogleForm } from "../GoogleForm";
 
 const SectionThree: FC = () => {
   const classes = useStyles();
@@ -22,42 +23,49 @@ const SectionThree: FC = () => {
             deserunt mollit anim id est laborum.
           </Typography>
         </Box>
-        <Box pt={3}>
-            <TextField id="name"
-                      label="Navn Navnesen"
-                      type="search"
-                      variant="filled"
-                      className= {classes.textField}
-                      InputProps={{
-                        classes: {
-                          root: classes.textFieldInput,
-                          focused: classes.focused
-                        }
-                      }}
-            />
+        <Box className={classes.googleFormWrapper} mt={4} mb={4}>
+          <Box className={classes.googleForm}>
+            <GoogleForm />
+          </Box>
+        </Box>
+        {/* <Box pt={3}>
+          <TextField
+            id="name"
+            label="Navn Navnesen"
+            type="search"
+            variant="filled"
+            className={classes.textField}
+            InputProps={{
+              classes: {
+                root: classes.textFieldInput,
+                focused: classes.focused
+              }
+            }}
+          />
         </Box>
         <Box>
-            <TextField error
-                       id="epostAddress"
-                       label="navn.navnesen@epost.no"
-                       type="search"
-                       variant="filled"
-                       helperText="Ugyldig epostadresse"
-                       className= {classes.textField}
-                       InputProps={{
-                        classes: {
-                          root: classes.textFieldInput,
-                          focused: classes.focused
-                        },
-                        inputMode: "numeric"
-                       }}
-            />
+          <TextField
+            error
+            id="epostAddress"
+            label="navn.navnesen@epost.no"
+            type="search"
+            variant="filled"
+            helperText="Ugyldig epostadresse"
+            className={classes.textField}
+            InputProps={{
+              classes: {
+                root: classes.textFieldInput,
+                focused: classes.focused
+              },
+              inputMode: "numeric"
+            }}
+          />
         </Box>
         <Box pt={5}>
           <Button variant="contained" className={classes.button}>Ja, jeg vil bidra!</Button>
-        </Box>
-        <Box pt={10}>
-              <img src="img/elements/logo3.svg" alt="SYOM" />
+        </Box> */}
+        <Box pt={5}>
+          <img src="img/elements/logo3.svg" alt="SYOM" />
         </Box>
       </Container>
     </Box >

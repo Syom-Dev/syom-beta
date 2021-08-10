@@ -45,7 +45,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     paddingTop: "10pt"
   },
   cssLabel: {
-    color : '#808483'
+    color: "#808483"
   },
   focused: {
     backgroundColor: "white",
@@ -57,24 +57,54 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     backgroundColor: "#FFFFFF"
   },
   button: {
-      margin: theme.spacing(1),
-      borderRadius: "5em",
-      background: "#3ACC9F",
-      textTransform: "none",
-      color: "#FFFFFF",
-      alignItems: "center",
-      fontWeight: "bold",
-      fontSize: "15px"
+    margin: theme.spacing(1),
+    borderRadius: "5em",
+    background: "#3ACC9F",
+    textTransform: "none",
+    color: "#FFFFFF",
+    alignItems: "center",
+    fontWeight: "bold",
+    fontSize: "15px"
   },
   input: {
-      display: "none"
+    display: "none"
   },
   footer: {
-      alignItems: "center",
-      justifyContent: "center",
-      display: "flex",
-      paddingTop: "8pt",
-      paddingBottom: "8pt",
-      background: "#C1BEA3"
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    paddingTop: "8pt",
+    paddingBottom: "8pt",
+    background: "#C1BEA3"
+  },
+  googleFormWrapper: {
+    position: "relative",
+    overflow: "hidden",
+    height: "600px"
+  },
+  googleForm: {
+    position: "absolute",
+    top: "-169px",
+    left: "0",
+    right: "0"
+  },
+  iframe: {
+    height: "800px",
+    width: "577px"
+  },
+  [theme.breakpoints.down("xs")]: {
+    iframe: {
+      height: "995px",
+      width: "303px"
+    },
+    googleFormWrapper: {
+      position: "relative",
+      overflow: "hidden",
+      height: "690px"
+    },
+    googleForm: {
+      position: "absolute",
+      top: "-179px"
+    }
   }
 }));

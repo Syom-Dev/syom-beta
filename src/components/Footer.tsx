@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import React, { FC } from "react";
 
 import { useStyles } from "./BetaPage/styles.jss";
@@ -8,16 +8,16 @@ export const Footer: FC = () => {
 
   return (
     <footer>
-      <Box className={classes.footer}>
-        <text>Exercitation veniam consequat sunt</text>
+      <Box className={classes.footer} px={2} textAlign="center">
+        <Typography>
+For andre henvendelser, ta kontakt med oss på
     &nbsp;
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {"nostrud amet"}
-        </a>
+          <a
+            href="mailto:maren.gulnes@gmail.com"
+          >
+            {"maren.gulnes@gmail.com"}
+          </a>
+        </Typography>
       </Box>
     </footer>
   );

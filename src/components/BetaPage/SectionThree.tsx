@@ -16,11 +16,16 @@ const SectionThree: FC = () => {
         <Typography component="h2" variant="h3">... men skal det bli bra, trenger vi deg :)</Typography>
         <Box pt={5}>
           <Typography component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+          For hvem vet best hva en slik app trenger? Jo, brukerne!
+          </Typography>
+          <Typography component="p">
+          Om du har en hel haug klær du ønsker å fikse,
+          digger å sitte ved symaskinen eller bare er nysgjerrig på konseptet, er vi interessert i å høre fra deg!
+          </Typography>
+        </Box>
+        <Box pt={3}>
+          <Typography>
+          Legg igjen navn og e-post under om du kunne tenke deg å teste dette konseptet.
           </Typography>
         </Box>
         <Box className={classes.googleFormWrapper} mt={4} mb={4}>

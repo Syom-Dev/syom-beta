@@ -39,9 +39,15 @@ const SyomHeader: FC = () => {
               </Typography>
             </Box>
             <Typography component="p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Alle trenger klær.
+            Om du er lidenskapelig opptatt av mote, eller kun benytter klær for å dekke til private områder.
+            Ikke rart at vi i dag produserer klær for flere ressurser enn det jorden naturlig kan produsere.
+            Vi i SYOM ønsker å gjøre noe med dette!
+            Ved å gjøre det enkelt å få reparert eller redesignet klær ønsker vi å forlenge klærnes levetid og ved det redusere forbruket av klær.
             </Typography>
-
+            <Typography component="p">
+              Ved å bli en del av SYOM kan du bidra til dette!
+            </Typography>
             <Box pt={4}>
               <img src="/img/elements/logo1.svg" alt="SYOM" style={{ height: "40px" }} />
             </Box>

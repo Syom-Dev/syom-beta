@@ -12,20 +12,16 @@ const SectionTwo: FC = () => {
         <Typography component="h2" variant="h3">Slik designer vi appen</Typography>
         <Box pt={5}>
           <Typography component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+          Har du noen gang hatt et hull i en bukse og bare lagt den bakerst i skapet fordi du ikke orker å reparere det?
+          Da er du ikke alene! De fleste ønsker ikke å kaste klær selv om de får et hull eller en rift.
+          Samtidig er det flere ildsjeler som liker å reparere og re-designe klær.
+          Vi ønsker å gjøre terskelen for å få fikset klær lavere ved å enkelt koble sammen de som ønsker å få klær reparert med de som kunne tenke seg å reparere klær.
           </Typography>
         </Box>
         <Box pt={3}>
           <Typography component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+          Appen gjør dette ved å la brukere opprette oppdrag der det informeres om plagget eller plaggene som skal fikses eller re-designes som de som reparerer kan se igjennom og svare på.
+          På denne måten håper vi at terskelen for å beholde klær fremfor å kaste dem skal bli lavere.
           </Typography>
         </Box>
       </Container>

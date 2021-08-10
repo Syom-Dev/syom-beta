@@ -1,11 +1,16 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
-import { SlowMotionVideoOutlined, Transform } from "@material-ui/icons";
 
 export const useStyles = makeStyles((theme: Theme) => createStyles({
   imageContainer: {
-    background: "url(img/stock/handssewing2.png)",
-    backgroundSize: "cover"
+    background: "url(img/stock/handsewing6.jpg)",
+    backgroundSize: "cover",
+
+    [theme.breakpoints.down("md")]: {
+      background: "url(img/stock/handsewing5.jpg)",
+      backgroundSize: "cover"
+    }
   },
+
   imageContainerSection2: {
     background: "url(img/stock/planning.png)",
     backgroundSize: "cover"

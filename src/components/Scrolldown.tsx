@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 import { ButtonBase } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-const useStyles = makeStyles((theme: Theme) => createStyles({
+const useStyles = makeStyles(() => createStyles({
   scrolldown: {
     position: "absolute",
     bottom: "5px"
@@ -13,8 +13,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
 const Scrolldown: FC = () => {
   const classes = useStyles();
 
-  const handleScroll = () => {
-    console.log("test", document.documentElement.scrollHeight);
+  const handleScroll = (): void => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: "smooth"

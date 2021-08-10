@@ -61,15 +61,19 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   textFieldInput: {
     backgroundColor: "#FFFFFF"
   },
-  button: {
-    margin: theme.spacing(1),
-    borderRadius: "5em",
-    background: "#3ACC9F",
-    textTransform: "none",
-    color: "#FFFFFF",
-    alignItems: "center",
-    fontWeight: "bold",
-    fontSize: "15px"
+  accceptButton: {
+    // margin: theme.spacing(1),
+    "borderRadius": "5em",
+    "background": "#3ACC9F",
+    "textTransform": "none",
+    "color": "#FFFFFF",
+    "alignItems": "center",
+    "fontWeight": "bold",
+    "fontSize": "15px",
+    "padding": "0.7rem 1.5rem",
+    "&:hover": {
+      color: theme.palette.text.primary
+    }
   },
   input: {
     display: "none"

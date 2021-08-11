@@ -72,7 +72,9 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     "fontSize": "15px",
     "padding": "0.7rem 1.5rem",
     "&:hover": {
-      color: theme.palette.text.primary
+      color: theme.palette.grey[700],
+      background: theme.palette.grey[100],
+      textDecoration: "none"
     }
   },
   input: {

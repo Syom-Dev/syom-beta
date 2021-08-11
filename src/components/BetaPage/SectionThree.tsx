@@ -29,7 +29,14 @@ const SectionThree: FC = () => {
           </Typography>
         </Box>
         <Box mt={4} mb={4}>
-          <Button variant="contained" className={classes.accceptButton}>Ja, jeg vil bidra!</Button>
+          <Button
+            component={Link}
+            className={classes.accceptButton}
+            href="https://forms.gle/8jA5RLkscYv2Wpub9"
+            target="_blank" rel="noopener noreferrer"
+          >
+          Ja, jeg vil bidra!
+          </Button>
         </Box>
 
         <Box pt={5}>

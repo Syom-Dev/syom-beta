@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Container, Typography } from "@material-ui/core";
+import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
 // import Scrolldown from "../Scrolldown";
@@ -18,6 +18,17 @@ const SyomHeader: FC = () => {
             <Typography component="p" variant="h5">
               Langt liv for klærne
             </Typography>
+          </Box>
+
+          <Box mt={4} mb={4}>
+            <Button
+              component={Link}
+              className={classes.accceptButton}
+              href="https://forms.gle/8jA5RLkscYv2Wpub9"
+              target="_blank" rel="noopener noreferrer"
+            >
+          Ja, jeg vil bidra!
+            </Button>
           </Box>
 
           <Box>

@@ -1,8 +1,7 @@
 import React, { FC } from "react";
-import { Box, Container, Typography, TextField, Button, ButtonBase, Link } from "@material-ui/core";
+import { Box, Container, Typography, Button, ButtonBase, Link } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
-import { GoogleForm } from "../GoogleForm";
 
 const SectionThree: FC = () => {
   const classes = useStyles();
@@ -13,7 +12,10 @@ const SectionThree: FC = () => {
         <img src="/img/elements/appicon.svg" alt="appikon" style={{ height: "120px" }} />
       </Box>
       <Container maxWidth="sm">
-        <Typography component="h2" variant="h3">... men skal det bli bra, trenger vi deg :)</Typography>
+        <Typography component="h2" variant="h3">
+... men skal det bli bra, trenger vi
+          <Box component="span" fontWeight="300"> deg :)</Box>
+        </Typography>
         <Box pt={5}>
           <Typography component="p">
           For hvem vet best hva en slik app trenger? Jo, brukerne!

@@ -25,7 +25,26 @@ export default createMuiTheme({
   typography: {
     fontSize: 14,
     fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(",")
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(","),
+    h1: {
+      fontWeight: 200
+    },
+    h2: {
+      fontWeight: 200
+    },
+    h3: {
+      fontWeight: 200,
+      fontSize: "2.67rem"
+    },
+    h4: {
+      fontWeight: 500
+    },
+    h5: {
+      fontWeight: 500
+    },
+    h6: {
+      fontWeight: 500
+    }
   },
 
   overrides: {

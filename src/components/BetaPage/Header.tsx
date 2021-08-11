@@ -20,7 +20,7 @@ const SyomHeader: FC = () => {
             </Typography>
           </Box>
 
-          <Box mt={4} mb={4}>
+          {/* <Box mt={4} mb={4}>
             <Button
               component={Link}
               className={classes.accceptButton}
@@ -29,7 +29,7 @@ const SyomHeader: FC = () => {
             >
           Ja, jeg vil bidra!
             </Button>
-          </Box>
+          </Box> */}
 
           <Box>
             <img src="/img/elements/appview.svg" alt="SYOM" style={{ maxHeight: "300px" }} />

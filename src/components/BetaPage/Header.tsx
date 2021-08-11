@@ -25,16 +25,20 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>
-            <Box className={classes.blueCircle} display="flex" justifyContent="center" alignItems="center">
-              <Typography component="p">BETA</Typography>
+            <Box
+              className={classes.blueCircle}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography component="p" style={{ fontSize: "10px" }}>BETA</Typography>
             </Box>
           </Box>
 
           <Box pt={2} pb={4} className={classes.lineBox} />
           <Container>
-
             <Box pb={4}>
-              <Typography component="h1" variant="h2">
+              <Typography component="h1" variant="h3">
                 Hvorfor SYOM?
               </Typography>
             </Box>

@@ -44,25 +44,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     left: 0,
     right: 0
   },
-  textField: {
-    borderRadius: "4px",
-    borderColor: "#000000",
-    paddingTop: "10pt"
-  },
-  cssLabel: {
-    color: "#808483"
-  },
-  focused: {
-    backgroundColor: "white",
-    borderStyle: "solid",
-    borderWidth: "2px",
-    borderColor: "#EAAE92 !important"
-  },
-  textFieldInput: {
-    backgroundColor: "#FFFFFF"
-  },
   accceptButton: {
-    // margin: theme.spacing(1),
     "borderRadius": "5em",
     "background": "#3ACC9F",
     "textTransform": "none",
@@ -70,7 +52,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     "alignItems": "center",
     "fontWeight": "bold",
     "fontSize": "15px",
-    "padding": "0.7rem 1.5rem",
+    "padding": "0.9rem 2.8rem",
     "&:hover": {
       color: theme.palette.grey[700],
       background: theme.palette.grey[100],
@@ -117,5 +99,19 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
       position: "absolute",
       top: "-144px"
     }
+  },
+  textField: {
+    borderRadius: "4px",
+    borderColor: "#000000",
+    paddingTop: "10pt"
+  },
+  focused: {
+    backgroundColor: "white",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#EAAE92 !important"
+  },
+  textFieldInput: {
+    backgroundColor: "#FFFFFF"
   }
 }));

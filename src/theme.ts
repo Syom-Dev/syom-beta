@@ -23,7 +23,7 @@ export default createMuiTheme({
     background: { default: "#fff" }
   },
   typography: {
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(",")
   },

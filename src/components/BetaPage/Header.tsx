@@ -20,7 +20,7 @@ const SyomHeader: FC = () => {
             </Typography>
           </Box>
 
-          <Box mt={4} mb={4}>
+          <Box mt={4} mb={4} style={{ display: "none" }}>
             <Button
               component={Link}
               className={classes.accceptButton}

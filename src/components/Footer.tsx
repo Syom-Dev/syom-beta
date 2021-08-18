@@ -14,9 +14,9 @@ For andre henvendelser, ta kontakt med oss på
     &nbsp;
           <a
             style={{ color: "white" }}
-            href="mailto:maren.gulnes@gmail.com"
+            href="mailto:syomkontakt@gmail.com"
           >
-            {"maren.gulnes@gmail.com"}
+            {"syomkontakt@gmail.com"}
           </a>
         </Typography>
       </Box>

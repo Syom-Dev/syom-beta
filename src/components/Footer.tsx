@@ -9,13 +9,14 @@ export const Footer: FC = () => {
   return (
     <footer>
       <Box className={classes.footer} px={2} textAlign="center">
-        <Typography>
+        <Typography style={{ fontSize: "16px", color: "white" }}>
 For andre henvendelser, ta kontakt med oss på
     &nbsp;
           <a
-            href="mailto:maren.gulnes@gmail.com"
+            style={{ color: "white" }}
+            href="mailto:syomkontakt@gmail.com"
           >
-            {"maren.gulnes@gmail.com"}
+            {"syomkontakt@gmail.com"}
           </a>
         </Typography>
       </Box>

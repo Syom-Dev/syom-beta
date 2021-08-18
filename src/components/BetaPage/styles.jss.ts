@@ -31,16 +31,18 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     borderRadius: "50%",
     background: theme.palette.info.main,
     color: "white",
-    width: "40px",
-    height: "40px",
-    fontSize: "10px"
+    width: "53px",
+    height: "53px",
+    fontSize: "10px",
+    marginTop: "-16px",
+    boxShadow: "0 4px 4px 0px rgb(0 0 0 / 25%)"
   },
   lineBox: {
     borderTop: "3px solid #E4E4E4"
   },
   absoluteAppIcon: {
     position: "absolute",
-    top: "-50px",
+    top: "-113px",
     left: 0,
     right: 0
   },
@@ -50,9 +52,12 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     "textTransform": "none",
     "color": "#FFFFFF",
     "alignItems": "center",
-    "fontWeight": "bold",
-    "fontSize": "15px",
     "padding": "0.9rem 2.8rem",
+    "minHeight": "75px",
+    "minWidth": "268px",
+    "fontSize": "21px",
+    "fontWeight": "bold",
+    "boxShadow": "0 4px 45px rgb(0 0 0 / 40%)",
     "&:hover": {
       color: theme.palette.grey[700],
       background: theme.palette.grey[100],
@@ -113,5 +118,10 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
   textFieldInput: {
     backgroundColor: "#FFFFFF"
+  },
+  link: {
+    color: theme.palette.secondary.main,
+    textDecoration: "underline",
+    fontWeight: "bold"
   }
 }));

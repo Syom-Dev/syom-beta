@@ -1,7 +1,7 @@
 import { createMuiTheme } from "@material-ui/core";
 
 const grey = "#808483";
-// const dark_grey = "#4D4D4D";
+const darkGrey = "#4D4D4D";
 const lightGrey = "#CCCCCC";
 // const lighter_gray = "#EBEBEB";
 const beige = "#C1BEA3";
@@ -15,7 +15,7 @@ export default createMuiTheme({
     secondary: { main: green },
     info: { main: blue },
     text: {
-      primary: grey,
+      primary: darkGrey,
       secondary: green,
       disabled: lightGrey,
       hint: beige
@@ -23,11 +23,12 @@ export default createMuiTheme({
     background: { default: "#fff" }
   },
   typography: {
-    fontSize: 14,
-    fontFamily: ["Helvetica Neue", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
+    fontSize: 19,
+    fontFamily: ["Helvetica Neue", "\"Roboto\"", "\"Inter\"", "\"Raleway\"", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "sans-serif"].join(","),
     h1: {
-      fontWeight: 200
+      fontWeight: 200,
+      fontSize: "42px"
     },
     h2: {
       fontWeight: 200
@@ -40,10 +41,15 @@ export default createMuiTheme({
       fontWeight: 500
     },
     h5: {
-      fontWeight: 500
+      fontWeight: 300,
+      fontSize: "1.69rem"
     },
     h6: {
       fontWeight: 500
+    },
+    body1: {
+      fontSize: 19,
+      lineHeight: 2.5
     }
   },
 

@@ -7,21 +7,25 @@ const SectionTwo: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.imageContainerSection2} py={10} textAlign="center" pb={10}>
-      <Container maxWidth="sm">
-        <Typography component="h2" variant="h3">Slik designer vi appen</Typography>
-        <Box pt={5}>
+    <Box className={classes.imageContainerSection2} pt={10.1} pb={24.25} textAlign="center">
+      <Container maxWidth="md">
+        <Typography component="h2" variant="h3">Hvordan skal vi gjøre det?</Typography>
+        <Box pt={7.25}>
           <Typography component="p">
-          Har du noen gang hatt et hull i en bukse og bare lagt den bakerst i skapet fordi du ikke orker å reparere det?
-          Da er du ikke alene! De fleste ønsker ikke å kaste klær selv om de får et hull eller en rift.
-          Samtidig er det flere ildsjeler som liker å reparere og re-designe klær.
-          Vi ønsker å gjøre terskelen for å få fikset klær lavere ved å enkelt koble sammen de som ønsker å få klær reparert med de som kunne tenke seg å reparere klær.
+          SYOM skal gjøre det lettere for folk som vil gjenbruke eller fikse klær å
+          komme i kontakt med de som er gode på reparasjoner og re-design.
           </Typography>
         </Box>
         <Box pt={3}>
           <Typography component="p">
-          Appen gjør dette ved å la brukere opprette oppdrag der det informeres om plagget eller plaggene som skal fikses eller re-designes som de som reparerer kan se igjennom og svare på.
-          På denne måten håper vi at terskelen for å beholde klær fremfor å kaste dem skal bli lavere.
+          En som kan reparere eller designe klær får muligheten til å promotere eget arbeid og skaffe seg et større nettverk,
+          mens andre får muligheten til å gi klærne sine lengre levetid.
+          Dette samarbeidet tror vi på.
+          </Typography>
+        </Box>
+        <Box pt={3}>
+          <Typography component="p">
+          I appen kobles disse sammen og slik blir terskelen lavere for å beholde klær fremfor å kaste dem.
           </Typography>
         </Box>
       </Container>

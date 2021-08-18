@@ -9,18 +9,18 @@ const SyomHeader: FC = () => {
 
   return (
     <Box className={classes.imageContainer} >
-      <Box className={classes.fader} py={10} >
-        <Container maxWidth="sm">
+      <Box className={classes.fader} pt={11.5} pb={15}>
+        <Container maxWidth="md">
           <Box>
             <img src="/img/elements/logo1.svg" alt="Syom" />
           </Box>
-          <Box pt={4} pb={3}>
+          <Box mt={5} mb={1.625} >
             <Typography component="p" variant="h5">
               Langt liv for klærne
             </Typography>
           </Box>
 
-          <Box mt={4} mb={4} style={{ display: "none" }}>
+          <Box style={{ display: "none" }}>
             <Button
               component={Link}
               className={classes.accceptButton}
@@ -32,7 +32,7 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box>
-            <img src="/img/elements/appview.svg" alt="SYOM" style={{ maxHeight: "300px" }} />
+            <img src="/img/elements/appview2.svg" alt="SYOM" style={{ maxHeight: "657px" }} />
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>
@@ -42,29 +42,42 @@ const SyomHeader: FC = () => {
               justifyContent="center"
               alignItems="center"
             >
-              <Typography component="p" style={{ fontSize: "10px" }}>BETA</Typography>
+              <Typography component="p" style={{ fontSize: "14px" }}>BETA</Typography>
             </Box>
           </Box>
 
-          <Box pt={2} pb={4} className={classes.lineBox} />
+          <Box pt={8.125} pb={8.125} className={classes.lineBox} />
           <Container>
-            <Box pb={4}>
+            <Box pb={9}>
               <Typography component="h1" variant="h3">
                 Hvorfor SYOM?
               </Typography>
             </Box>
             <Typography component="p">
-            Alle trenger klær.
-            Om du er lidenskapelig opptatt av mote, eller kun benytter klær for å dekke til private områder.
-            Ikke rart at vi i dag produserer klær for flere ressurser enn det jorden naturlig kan produsere.
-            Vi i SYOM ønsker å gjøre noe med dette!
-            Ved å gjøre det enkelt å få reparert eller redesignet klær ønsker vi å forlenge klærnes levetid og ved det redusere forbruket av klær.
+            Alle trenger klær! Enten du har en lidenskap for mote
+            eller er mest opptatt av å beskytte deg mot kulda. Dessverre er
+            tekstilindustrien er en miljøversting som er med å tømme jordens
+            naturlige ressurser.
             </Typography>
             <Typography component="p">
-              Ved å bli en del av SYOM kan du bidra til dette!
+            Dette vil vi i SYOM gjøre noe med!
+            Vi skal gjøre det enkelt for folk å få reparert eller sydd om klær.
+            Det vil føre til økt levetid for hvert plagg og mindre forbruk av jordens ressurser.
             </Typography>
-            <Box pt={4}>
-              <img src="/img/elements/logo1.svg" alt="SYOM" style={{ height: "40px" }} />
+            <Typography component="p">
+            Vil du bidra?
+              {" "}
+              <Link
+                className={classes.link}
+                href="https://forms.gle/8jA5RLkscYv2Wpub9"
+                target="_blank" rel="noopener noreferrer"
+              >
+                Bli en betatester for SYOM!
+              </Link>
+            </Typography>
+            <Box pt={8.125}>
+              <img src="/img/elements/logo2.png" alt="SYOM logo" style={{ height: "82px" }} />
+              {/* <img src="/img/elements/logo2.svg" alt="SYOM logo" /> */}
             </Box>
           </Container>
           {/* <Scrolldown /> */}

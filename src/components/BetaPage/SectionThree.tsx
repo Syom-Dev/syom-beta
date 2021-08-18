@@ -7,30 +7,40 @@ const SectionThree: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.brownContainer} py={10} textAlign="center" pb={10}>
+    <Box className={classes.brownContainer} pt={19.375} pb={16.5} textAlign="center">
       <Box className={classes.absoluteAppIcon}>
-        <img src="/img/elements/appicon.svg" alt="appikon" style={{ height: "120px" }} />
+        <img src="/img/elements/appicon2.svg" alt="appikon" />
       </Box>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Typography component="h2" variant="h3">
 ... men skal det bli bra, trenger vi
           <Box component="span" fontWeight="300"> deg :)</Box>
         </Typography>
-        <Box pt={5}>
+        <Box pt={8.625}>
           <Typography component="p">
-          For hvem vet best hva en slik app trenger? Jo, brukerne!
+          SYOM blir veldig bra, det er vi sikre på. Men for at det skal bli anvendbart, trenger vi deg!
           </Typography>
           <Typography component="p">
-          Om du har en hel haug klær du ønsker å fikse,
-          digger å sitte ved symaskinen eller bare er nysgjerrig på konseptet, er vi interessert i å høre fra deg!
+          Digger du å designe / re-designe, eller generelt idéen med å reparere klær istedenfor å kaste de?
+          Eller Trenger du å få reparert et plagg, ønsker å få sydd et nytt spesialdesignet kostyme, eller helt enkelt ønsker å få sydd om noe slik at det får lengre levetid?
+
+          Da vil vi gjerne høre fra deg.
+          Vi trenger både gode
+            {" "}
+            <b>forslag til funksjonalitet</b>
+            {" "}
+og folk som vil
+            {" "}
+            <b>teste tjenesten</b>
+.
           </Typography>
         </Box>
         <Box pt={3}>
           <Typography>
-            Kunne du tenkte deg å teste dette?
+          Legg igjen navn og e-post under, så hører du fra oss. Hilsen oss i SYOM.
           </Typography>
         </Box>
-        <Box mt={4} mb={4}>
+        <Box mt={10.25} mb={12.75}>
           <Button
             component={Link}
             className={classes.accceptButton}

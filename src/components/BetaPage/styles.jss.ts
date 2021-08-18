@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
   absoluteAppIcon: {
     position: "absolute",
-    top: "-76px",
+    top: "-113px",
     left: 0,
     right: 0
   },

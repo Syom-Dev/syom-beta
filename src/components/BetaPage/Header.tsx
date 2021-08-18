@@ -32,7 +32,7 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box>
-            <img src="/img/elements/appview2.svg" alt="SYOM" style={{ maxHeight: "657px" }} />
+            <img src="/img/elements/appview3.svg" alt="SYOM" style={{ maxHeight: "657px" }} />
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>

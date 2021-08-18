@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
   absoluteAppIcon: {
     position: "absolute",
-    top: "-113px",
+    top: "-76px",
     left: 0,
     right: 0
   },
@@ -57,6 +57,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     "minWidth": "268px",
     "fontSize": "21px",
     "fontWeight": "bold",
+    "boxShadow": "0 4px 45px rgb(0 0 0 / 40%)",
     "&:hover": {
       color: theme.palette.grey[700],
       background: theme.palette.grey[100],

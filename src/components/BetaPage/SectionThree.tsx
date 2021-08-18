@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Box, Container, Typography, Button, Link } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
+import { AppIcon } from "../SvgIcons";
 
 const SectionThree: FC = () => {
   const classes = useStyles();
@@ -9,7 +10,8 @@ const SectionThree: FC = () => {
   return (
     <Box className={classes.brownContainer} pt={19.375} pb={16.5} textAlign="center">
       <Box className={classes.absoluteAppIcon}>
-        <img src="/img/elements/appicon2.svg" alt="appikon" />
+        {/* <img src="/img/elements/appicon3.svg" alt="appikon" /> */}
+        <AppIcon />
       </Box>
       <Container maxWidth="md">
         <Typography component="h2" variant="h3">
@@ -22,17 +24,16 @@ const SectionThree: FC = () => {
           </Typography>
           <Typography component="p">
           Digger du å designe / re-designe, eller generelt idéen med å reparere klær istedenfor å kaste de?
-          Eller Trenger du å få reparert et plagg, ønsker å få sydd et nytt spesialdesignet kostyme, eller helt enkelt ønsker å få sydd om noe slik at det får lengre levetid?
+          Eller trenger du å få reparert et plagg, ønsker å få sydd et nytt spesialdesignet kostyme, eller helt enkelt ønsker å få sydd om noe slik at det får lengre levetid?
 
           Da vil vi gjerne høre fra deg.
           Vi trenger både gode
             {" "}
             <b>forslag til funksjonalitet</b>
             {" "}
-og folk som vil
+            og folk som vil
             {" "}
-            <b>teste tjenesten</b>
-.
+            <b>teste tjenesten.</b>
           </Typography>
         </Box>
         <Box pt={3}>

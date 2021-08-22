@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
-// import Image from "next/image";
 
 import { useStyles } from "./styles.jss";
-// import Scrolldown from "../Scrolldown";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -14,7 +12,6 @@ const SyomHeader: FC = () => {
         <Container maxWidth="md">
           <Box>
             <img src="/img/elements/logo1.svg" alt="Syom logo" />
-            {/* <Image src="/img/elements/logo1.svg" alt="Syom logo" width={187} height={155} /> */}
           </Box>
           <Box mt={5} mb={1.625} >
             <Typography component="p" variant="h5">
@@ -35,7 +32,6 @@ const SyomHeader: FC = () => {
 
           <Box>
             <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
-            {/* <Image src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" width={365} height={657} /> */}
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>
@@ -79,11 +75,9 @@ const SyomHeader: FC = () => {
             </Typography>
             <Box pt={8.125}>
               <img src="/img/elements/logo2.png" alt="SYOM logo" style={{ height: "82px" }} />
-              {/* <Image src="/img/elements/logo2.png" alt="SYOM logo" width={111} height={82} /> */}
 
             </Box>
           </Container>
-          {/* <Scrolldown /> */}
         </Container>
       </Box>
     </Box >

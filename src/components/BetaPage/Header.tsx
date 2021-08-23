@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
 import { useStyles } from "./styles.jss";
-// import Scrolldown from "../Scrolldown";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -12,7 +11,7 @@ const SyomHeader: FC = () => {
       <Box className={classes.fader} pt={11.5} pb={15}>
         <Container maxWidth="md">
           <Box>
-            <img src="/img/elements/logo1.svg" alt="Syom" />
+            <img src="/img/elements/logo1.svg" alt="Syom logo" />
           </Box>
           <Box mt={5} mb={1.625} >
             <Typography component="p" variant="h5">
@@ -32,7 +31,7 @@ const SyomHeader: FC = () => {
           </Box>
 
           <Box>
-            <img src="/img/elements/appview3.svg" alt="SYOM" style={{ maxHeight: "657px" }} />
+            <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
           </Box>
 
           <Box display="flex" justifyContent="center" pb={4}>
@@ -56,13 +55,12 @@ const SyomHeader: FC = () => {
             <Typography component="p">
             Alle trenger klær! Enten du har en lidenskap for mote
             eller er mest opptatt av å beskytte deg mot kulda. Dessverre er
-            tekstilindustrien er en miljøversting som er med å tømme jordens
-            naturlige ressurser.
+            tekstilindustrien en miljøversting som er med å tømme jordens naturressurser.
             </Typography>
             <Typography component="p">
             Dette vil vi i SYOM gjøre noe med!
             Vi skal gjøre det enkelt for folk å få reparert eller sydd om klær.
-            Det vil føre til økt levetid for hvert plagg og mindre forbruk av jordens ressurser.
+            Det vil føre til lengre levetid for hvert plagg og mindre forbruk av jordens ressurser.
             </Typography>
             <Typography component="p">
             Vil du bidra?
@@ -77,10 +75,9 @@ const SyomHeader: FC = () => {
             </Typography>
             <Box pt={8.125}>
               <img src="/img/elements/logo2.png" alt="SYOM logo" style={{ height: "82px" }} />
-              {/* <img src="/img/elements/logo2.svg" alt="SYOM logo" /> */}
+
             </Box>
           </Container>
-          {/* <Scrolldown /> */}
         </Container>
       </Box>
     </Box >

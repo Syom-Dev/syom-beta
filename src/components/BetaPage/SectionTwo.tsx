@@ -20,12 +20,11 @@ const SectionTwo: FC = () => {
           <Typography component="p">
           En som kan reparere eller designe klær får muligheten til å promotere eget arbeid og skaffe seg et større nettverk,
           mens andre får muligheten til å gi klærne sine lengre levetid.
-          Dette samarbeidet tror vi på.
           </Typography>
         </Box>
         <Box pt={3}>
           <Typography component="p">
-          I appen kobles disse sammen og slik blir terskelen lavere for å beholde klær fremfor å kaste dem.
+          Dette samarbeidet tror vi på. Ved å knytte kontakt via appen blir terskelen lavere for å beholde klær fremfor å kaste dem.
           </Typography>
         </Box>
       </Container>

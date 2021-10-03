@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@material-ui/core/styles";
 
 const grey = "#808483";
 const darkGrey = "#4D4D4D";
@@ -9,7 +9,7 @@ const beige = "#C1BEA3";
 const green = "#3ACC9F";
 const blue = "#48AFEC";
 
-export default createMuiTheme({
+export default createTheme({
   palette: {
     primary: { main: grey },
     secondary: { main: green },

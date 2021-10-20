@@ -9,8 +9,8 @@ import { Footer } from "../src/components/Footer";
 const Home: FC = () => (
   <Layout>
     <SyomHeader />
-    <SectionTwo />
-    <SectionThree />
+    {/* <SectionTwo />
+    <SectionThree /> */}
     <Footer />
   </Layout>
 );

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
-import { useStyles } from "../styles.jss";
+import { useStyles } from "../../styles.jss";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -18,30 +18,33 @@ const SyomHeader: FC = () => {
               Langt liv for klærne
             </Typography>
           </Box>
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Box>
+              <Box mt={2} mb={1.625}>
+                <Typography component="p" align="left" >
+              Et felleskap for reparasjon, redisign (generell fiksing) av klær og tekstiler.
+                </Typography>
+              </Box>
 
-          <Box style={{ display: "none" }}>
-            <Button
-              component={Link}
-              className={classes.accceptButton}
-              href="https://forms.gle/8jA5RLkscYv2Wpub9"
-              target="_blank" rel="noopener noreferrer"
-            >
-          Ja, jeg vil bidra!
-            </Button>
-          </Box>
+              <Box mt={2} mb={1.625}>
 
-          <Box>
-            <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
-          </Box>
+                <Typography component="p" align="left" >
+              Lanseres om kort tid i
+                </Typography>
+                <Typography component="p" align="left" >
+                  {" "}
+                  <b>App Store</b>
+                  {" "}
+og
+                  {" "}
+                  <b>Google Play</b>
+!
+                </Typography>
+              </Box>
+            </Box>
 
-          <Box display="flex" justifyContent="center" pb={4}>
-            <Box
-              className={classes.blueCircle}
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Typography component="p" style={{ fontSize: "14px" }}>BETA</Typography>
+            <Box>
+              <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
             </Box>
           </Box>
 

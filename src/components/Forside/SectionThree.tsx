@@ -16,7 +16,7 @@ const SectionThree: FC = () => {
       </Box>
       <Container maxWidth="md">
         <Typography component="h2" variant="h3">
-          ... men skal det bli bra, trenger vi
+          ... og skal det bli bra, trenger vi
           <Box component="span" fontWeight="300"> deg :)</Box>
         </Typography>
         <Box pt={8.625}>

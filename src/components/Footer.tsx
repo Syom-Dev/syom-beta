@@ -1,7 +1,7 @@
 import { Box, Typography } from "@material-ui/core";
 import React, { FC } from "react";
 
-import { useStyles } from "./BetaPage/styles.jss";
+import { useStyles } from "./styles.jss";
 
 export const Footer: FC = () => {
   const classes = useStyles();
@@ -14,9 +14,9 @@ For andre henvendelser, ta kontakt med oss på
     &nbsp;
           <a
             style={{ color: "white" }}
-            href="mailto:syomkontakt@gmail.com"
+            href="mailto:maren.gulnes@syom.no"
           >
-            {"syomkontakt@gmail.com"}
+            {"maren.gulnes@syom.no"}
           </a>
         </Typography>
       </Box>

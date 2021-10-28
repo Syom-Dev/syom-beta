@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
-import { useStyles } from "../styles.jss";
+import { useStyles } from "../../styles.jss";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -19,30 +19,21 @@ const SyomHeader: FC = () => {
             </Typography>
           </Box>
 
-          <Box style={{ display: "none" }}>
-            <Button
-              component={Link}
-              className={classes.accceptButton}
-              href="https://forms.gle/8jA5RLkscYv2Wpub9"
-              target="_blank" rel="noopener noreferrer"
-            >
-          Ja, jeg vil bidra!
-            </Button>
-          </Box>
-
           <Box>
             <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
           </Box>
 
-          <Box display="flex" justifyContent="center" pb={4}>
-            <Box
-              className={classes.blueCircle}
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Typography component="p" style={{ fontSize: "14px" }}>BETA</Typography>
-            </Box>
+          <Box mt={0} pb={4}>
+
+            <Typography component="p" >
+Lanseres om kort tid i
+              {" "}
+              <b style={{ color: "#48AFEC" }}>App Store</b>
+              {" "}
+og
+              {" "}
+              <b style={{ color: "#48AFEC" }}>Google Play</b>
+            </Typography>
           </Box>
 
           <Box pt={8.125} pb={8.125} className={classes.lineBox} />

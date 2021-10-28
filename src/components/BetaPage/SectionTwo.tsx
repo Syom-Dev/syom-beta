@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Box, Container, Typography } from "@material-ui/core";
 
-import { useStyles } from "./styles.jss";
+import { useStyles } from "../styles.jss";
 
 const SectionTwo: FC = () => {
   const classes = useStyles();

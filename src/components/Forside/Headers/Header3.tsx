@@ -22,9 +22,20 @@ const SyomHeader: FC = () => {
           <Box>
             <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
           </Box>
-
-          <Box mt={0} pb={4}>
-
+          <Box display="flex" justifyContent="center">
+            <Box
+              className={classes.blueCircle}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography component="p" style={{ fontSize: "14px" }}>BETA</Typography>
+            </Box>
+          </Box>
+          <Box
+            pt={4} pb={6
+            }
+          >
             <Typography component="p" >
 Lanseres om kort tid i
               {" "}
@@ -36,9 +47,9 @@ og
             </Typography>
           </Box>
 
-          <Box pt={8.125} pb={8.125} className={classes.lineBox} />
-          <Container>
-            <Box pb={9}>
+          <Box className={classes.lineBox} />
+          <Container id="hvorfor">
+            <Box pb={9} pt={16.25}>
               <Typography component="h1" variant="h3">
                 Hvorfor SYOM?
               </Typography>

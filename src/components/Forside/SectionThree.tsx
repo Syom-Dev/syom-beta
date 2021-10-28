@@ -10,7 +10,7 @@ const SectionThree: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.brownContainer} pt={19.375} pb={19.5} textAlign="center">
+    <Box id="bli-med" className={classes.brownContainer} pt={19.375} pb={19.5} textAlign="center">
       <Box className={classes.absoluteAppIcon}>
         {/* <img src="/img/elements/appicon3.svg" alt="appikon" /> */}
         <AppIcon />

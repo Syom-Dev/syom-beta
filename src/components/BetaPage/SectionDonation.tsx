@@ -8,7 +8,7 @@ const SectionDonation: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.imageDonation} pt={19.375} pb={16.5} textAlign="center">
+    <Box id="donasjon" className={classes.imageDonation} pt={19.375} pb={16.5} textAlign="center">
       <Box className={classes.absoluteVippsIcon}>
         <Image src="/img/vipps-qr-1.png" alt="Vipps QR" width={180} height={180} />
       </Box>

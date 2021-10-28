@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import { Box, Container, Typography } from "@material-ui/core";
 
-import { useStyles } from "./styles.jss";
+import { useStyles } from "../styles.jss";
 
 const SectionTwo: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.imageContainerSection2} pt={10.1} pb={24.25} textAlign="center">
+    <Box id="hvordan" className={classes.imageContainerSection2} pt={10.1} pb={24.25} textAlign="center">
       <Container maxWidth="md">
         <Typography component="h2" variant="h3">Hvordan skal vi gjøre det?</Typography>
         <Box pt={7.25}>

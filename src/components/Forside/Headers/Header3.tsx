@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
-import { useStyles } from "../styles.jss";
+import { useStyles } from "../../styles.jss";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -18,7 +18,6 @@ const SyomHeader: FC = () => {
               Langt liv for klærne
             </Typography>
           </Box>
-
           <Box style={{ display: "none" }}>
             <Button
               component={Link}
@@ -29,12 +28,10 @@ const SyomHeader: FC = () => {
           Ja, jeg vil bidra!
             </Button>
           </Box>
-
           <Box>
             <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
           </Box>
-
-          <Box display="flex" justifyContent="center" pb={4}>
+          <Box display="flex" justifyContent="center">
             <Box
               className={classes.blueCircle}
               display="flex"
@@ -44,10 +41,24 @@ const SyomHeader: FC = () => {
               <Typography component="p" style={{ fontSize: "14px" }}>BETA</Typography>
             </Box>
           </Box>
+          <Box
+            pt={4} pb={6
+            }
+          >
+            <Typography component="p" >
+Lanseres om kort tid i
+              {" "}
+              <b style={{ color: "#48AFEC" }}>App Store</b>
+              {" "}
+og
+              {" "}
+              <b style={{ color: "#48AFEC" }}>Google Play</b>
+            </Typography>
+          </Box>
 
-          <Box pt={8.125} pb={8.125} className={classes.lineBox} />
-          <Container>
-            <Box pb={9}>
+          <Box className={classes.lineBox} />
+          <Container id="hvorfor">
+            <Box pb={9} pt={16.25}>
               <Typography component="h1" variant="h3">
                 Hvorfor SYOM?
               </Typography>

@@ -1,5 +1,7 @@
 import React, { FC } from "react";
+// eslint-disable-next-line import/named
 import { Link, withStyles, WithStyles } from "@material-ui/core";
+// eslint-disable-next-line import/named
 import { Theme } from "@material-ui/core/styles";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -15,6 +17,7 @@ const SyomLink: FC<{href: string;} &WithStyles<typeof styles>> = ({ href, childr
   <Link
     className={classes.link}
     href={href}
+    target="_blank" rel="noopener noreferrer"
   >
     {children}
   </Link>

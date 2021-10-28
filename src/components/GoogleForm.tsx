@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useStyles } from "./BetaPage/styles.jss";
+import { useStyles } from "./styles.jss";
 
 export const GoogleForm: React.FC = () => {
   const classes = useStyles();

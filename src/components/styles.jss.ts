@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -12,6 +13,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
   },
 
   imageContainerSection2: {
+    position: "relative",
     background: "url(img/stock/planning.png)",
     backgroundSize: "cover"
   },
@@ -45,6 +47,27 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     top: "-113px",
     left: 0,
     right: 0
+  },
+  absoluteVippsIcon: {
+    position: "absolute",
+    top: "-85px",
+    left: 0,
+    right: 0
+  },
+  imageDonation: {
+    "position": "relative",
+    "&::after": {
+      content: "''",
+      background: "url(img/stock/food2.jpg)",
+      backgroundSize: "cover",
+      opacity: 0.15,
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      position: "absolute",
+      zIndex: -1
+    }
   },
   accceptButton: {
     "borderRadius": "5em",

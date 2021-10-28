@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+// eslint-disable-next-line import/named
 import { Box, Container, Typography, withStyles, WithStyles } from "@material-ui/core";
 
 import { styles } from "./styles.jss";

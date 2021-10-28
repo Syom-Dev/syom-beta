@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { Theme } from "@material-ui/core/styles";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

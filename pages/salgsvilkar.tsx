@@ -71,7 +71,7 @@ const TermsOfSale: FC = () => (
       2. Partene
       </Heading>
       <Paragraph>
-      Selger er Syom AS, Kransen 14B, 1166, Oslo, syomkontakt@gmail.co, 927905191, og betegnes i det følgende som  selger/selgeren.
+      Selger er Syom AS, Kransen 14B, 1166, Oslo, maren.gulnes@syom.no, 927905191, og betegnes i det følgende som  selger/selgeren.
       </Paragraph>
       <Paragraph>
 Kjøper er den forbrukeren som foretar bestillingen, og betegnes i det følgende som  kjøper/kjøperen.

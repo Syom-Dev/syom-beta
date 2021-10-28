@@ -15,6 +15,7 @@ const SyomLink: FC<{href: string;} &WithStyles<typeof styles>> = ({ href, childr
   <Link
     className={classes.link}
     href={href}
+    target="_blank" rel="noopener noreferrer"
   >
     {children}
   </Link>

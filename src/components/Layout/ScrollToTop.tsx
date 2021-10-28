@@ -1,6 +1,7 @@
 import React from "react";
 import { Fab } from "@material-ui/core";
 import { KeyboardArrowUp } from "@material-ui/icons";
+// eslint-disable-next-line import/named
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Zoom from "@material-ui/core/Zoom";

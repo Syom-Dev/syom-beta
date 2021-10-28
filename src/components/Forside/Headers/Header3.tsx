@@ -18,7 +18,16 @@ const SyomHeader: FC = () => {
               Langt liv for klærne
             </Typography>
           </Box>
-
+          <Box style={{ display: "none" }}>
+            <Button
+              component={Link}
+              className={classes.accceptButton}
+              href="https://forms.gle/8jA5RLkscYv2Wpub9"
+              target="_blank" rel="noopener noreferrer"
+            >
+          Ja, jeg vil bidra!
+            </Button>
+          </Box>
           <Box>
             <img src="/img/elements/appview3.svg" alt="En telefon med SYOM-logo" style={{ maxHeight: "657px", maxWidth: "100%" }} />
           </Box>

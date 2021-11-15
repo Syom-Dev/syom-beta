@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import useStyles from "./Menu.jss";
 import theme from "../../theme";
-import { SyomLinkInternal } from "../SyomLink";
+import { SyomInternalLink } from "../SyomLink";
 
 const TopMenu: FC = () => {
   const [activeUrl, setActiveUrl] = useState<string>();
@@ -17,7 +17,7 @@ const TopMenu: FC = () => {
 
   const DesktopLink: FC<{href: string;}> = ({ href, children }) => (
     <Box pr={2} className={(activeUrl === href) ? classes.active : ""}>
-      <SyomLinkInternal to={href} >{children}</SyomLinkInternal>
+      <SyomInternalLink href={href} >{children}</SyomInternalLink>
     </Box>
   );
 

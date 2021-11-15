@@ -50,7 +50,7 @@ const TemporaryDrawer: FC = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
     >
-      <FloatingMenu />
+
     </div>
   );
 
@@ -60,7 +60,7 @@ const TemporaryDrawer: FC = () => {
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
+            <FloatingMenu />
           </Drawer>
         </React.Fragment>
       ))}

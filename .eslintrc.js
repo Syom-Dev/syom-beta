@@ -547,6 +547,9 @@ module.exports = {
     "react/button-has-type": [
       "error"
     ],
+    "react/display-name": [
+      "off"
+    ],
     "react/function-component-definition": [
       "warn",
       { namedComponents: "arrow-function" }

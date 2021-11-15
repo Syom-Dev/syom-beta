@@ -1,14 +1,21 @@
 import React from "react";
 import Head from "next/head";
 
-import FloatingMenu from "./FloatingMenu";
 import ScrollTop from "./ScrollToTop";
 import TopMenu from "./TopMenu";
+import FloatingMenu from "./FloatingMenu";
+
+const metaDesc = `
+En plattform som knytter de som ønkser gi klærne lengre liv med de som har muligheten til å gjøre det.
+Alle trenger klær, om du er lidenskapelig interessert eller bare vil holde varmen.
+Vi i SYOM vil gjøre det enkelt for folk å få reparert eller sydd om klær
+for å gi lengre levetid for hvert plagg og minske forbruket av jordens ressurser.`;
 
 const Layout: React.FC = ({ children }) => (
   <>
     <Head>
       <title>Syom | Langt liv for klærne </title>
+      <meta name="description" content={metaDesc} />
       <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,8 +24,8 @@ const Layout: React.FC = ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
     </Head>
-    {/* <TopMenu />
-    <FloatingMenu /> */}
+    <TopMenu />
+    <FloatingMenu />
     <main className="main" id="top">
       {children}
       <ScrollTop />

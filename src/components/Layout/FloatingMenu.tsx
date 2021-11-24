@@ -1,5 +1,6 @@
 import React, { FC, useState, useEffect, useCallback } from "react";
 import { AppBar, ButtonBase, Button, Menu, Box, Drawer, SwipeableDrawer, Toolbar } from "@material-ui/core";
+import { useRouter } from "next/router";
 
 import useStyles from "./Menu.jss";
 import theme from "../../theme";
@@ -9,6 +10,7 @@ const FloatingMenu: FC = () => {
   const [activeUrl, setActiveUrl] = useState<string>();
 
   const classes = useStyles(theme);
+  const router = useRouter();
 
   useEffect(() => {
     setActiveUrl(window.location.pathname);
@@ -25,7 +27,7 @@ const FloatingMenu: FC = () => {
     let newActiveUrl = "";
 
     elements.forEach(elem => {
-      if (isInViewport(elem)) {
+      if (elem && isInViewport(elem)) {
         newActiveUrl = `#${elem.id}`;
       }
     });
@@ -54,9 +56,17 @@ const FloatingMenu: FC = () => {
   };
 
   const DesktopLink: FC<{id: string;}> = ({ id, children }) => {
+
     const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
       const target = event.target as HTMLDivElement;
       const link = target.id;
+
+      if (router.pathname !== "/") {
+        router.push(`/${target.id}`);
+
+        return;
+      }
+
       const anchor = ((event.target as HTMLDivElement).ownerDocument || document).querySelector(
         link
       );

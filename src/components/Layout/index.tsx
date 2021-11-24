@@ -2,8 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import ScrollTop from "./ScrollToTop";
-import TopMenu from "./TopMenu";
-import FloatingMenu from "./FloatingMenu";
+import Menu from "./BurgerMenu/Menu";
 
 const metaDesc = `
 En plattform som knytter de som ønkser gi klærne lengre liv med de som har muligheten til å gjøre det.
@@ -12,7 +11,7 @@ Vi i SYOM vil gjøre det enkelt for folk å få reparert eller sydd om klær
 for å gi lengre levetid for hvert plagg og minske forbruket av jordens ressurser.`;
 
 const Layout: React.FC = ({ children }) => (
-  <>
+  <div>
     <Head>
       <title>Syom | Langt liv for klærne </title>
       <meta name="description" content={metaDesc} />
@@ -24,13 +23,15 @@ const Layout: React.FC = ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
     </Head>
-    <TopMenu />
-    <FloatingMenu />
+
+    <Menu />
+
     <main className="main" id="top">
       {children}
       <ScrollTop />
     </main>
-  </>
+
+  </div>
 );
 
 export default Layout;

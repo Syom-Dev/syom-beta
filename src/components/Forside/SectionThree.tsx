@@ -4,7 +4,7 @@ import { Box, Container, Typography, Button, Link } from "@material-ui/core";
 
 import { useStyles } from "../styles.jss";
 import { AppIcon } from "../SvgIcons";
-import SyomLink from "../SyomLink";
+import SyomExternalLink from "../SyomLink";
 
 const SectionThree: FC = () => {
   const classes = useStyles();
@@ -27,7 +27,7 @@ const SectionThree: FC = () => {
           <Typography component="p">
             Hold deg oppdatert på hva vi gjør og få beskjed når appen lanseres ved å
             {" "}
-            <SyomLink href="https://forms.gle/8jA5RLkscYv2Wpub9">registrere deg her.</SyomLink>
+            <SyomExternalLink href="https://forms.gle/8jA5RLkscYv2Wpub9">registrere deg her.</SyomExternalLink>
           </Typography>
           <Box pt={3}>
             <Typography component="p">

@@ -10,7 +10,7 @@ const SectionThree: FC = () => {
   const classes = useStyles();
 
   return (
-    <Box id="bli-med" className={classes.brownContainer} pt={19.375} pb={19.5} textAlign="center">
+    <Box id="blimed" className={classes.brownContainer} pt={19.375} pb={19.5} textAlign="center">
       <Box className={classes.absoluteAppIcon}>
         {/* <img src="/img/elements/appicon3.svg" alt="appikon" /> */}
         <AppIcon />
@@ -31,15 +31,15 @@ const SectionThree: FC = () => {
           </Typography>
           <Box pt={3}>
             <Typography component="p">
-            Digger du å designe / re-designe, eller generelt idéen med å reparere klær i stedet for å kaste dem?
-            Eller trenger du å få reparert et plagg, ønsker å få sydd et nytt spesialdesignet kostyme, eller helt enkelt ønsker å få sydd om noe slik at det får lengre levetid?
+              Digger du å designe / re-designe, eller generelt idéen med å reparere klær i stedet for å kaste dem?
+              Eller trenger du å få reparert et plagg, ønsker å få sydd et nytt spesialdesignet kostyme, eller helt enkelt ønsker å få sydd om noe slik at det får lengre levetid?
 
-            Da vil vi gjerne høre fra deg.
-            Vi trenger både gode
+              Da vil vi gjerne høre fra deg.
+              Vi trenger både gode
               {" "}
               <b>forslag til funksjonalitet</b>
               {" "}
-            og folk som vil
+              og folk som vil
               {" "}
               <b>teste tjenesten.</b>
             </Typography>

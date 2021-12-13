@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Button, Link, Box, Container, Typography } from "@material-ui/core";
 
 import { useStyles } from "../../styles.jss";
+import { SyomInternalLink } from "../../SyomLink";
 
 const SyomHeader: FC = () => {
   const classes = useStyles();
@@ -54,6 +55,7 @@ og
               {" "}
               <b style={{ color: "#48AFEC" }}>Google Play</b>
             </Typography>
+            <SyomInternalLink href="/om-oss" >Les mer om oss</SyomInternalLink>
           </Box>
 
           <Box className={classes.lineBox} />

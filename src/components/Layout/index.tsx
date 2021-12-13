@@ -2,8 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import ScrollTop from "./ScrollToTop";
-import TopMenu from "./TopMenu";
-import ScrollToMain from './ScrollToMain';
+import ScrollToMain from "./ScrollToMain";
 
 const metaDesc = `
 En plattform som knytter de som ønkser gi klærne lengre liv med de som har muligheten til å gjøre det.
@@ -24,7 +23,6 @@ const Layout: React.FC = ({ children }) => (
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
     </Head>
-    <TopMenu />
     <ScrollToMain />
     <main className="main" id="top">
       {children}

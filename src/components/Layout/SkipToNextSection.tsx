@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 // eslint-disable-next-line import/named
 import { Theme } from "@material-ui/core/styles";
-import { Box, Button, withStyles } from "@material-ui/core";
+import { Box, Fab, withStyles } from "@material-ui/core";
 import { ChevronRightRounded } from "@material-ui/icons";
 
 import { getVisibilityOfElement } from "../../utils/ElementUtils";
@@ -17,16 +17,17 @@ const styles = (theme: Theme): any => ({
     left: 0,
     right: 0
   },
+
   skipToNextSectionButton: {
     margin: "0 auto",
-    display: "block"
+    display: "block",
+    background: "white",
+    borderRadius: "50%"
   },
+
   icon: {
     "transform": "rotate(90deg);",
-
-    "&:hover": {
-      fill: theme.palette.secondary.main
-    }
+    "vertical-align": "bottom"
   }
 });
 
@@ -56,9 +57,9 @@ const SkipToNextSection: FC<SkipToNextSectionProps> = ({ classes, sectionIds }) 
 
   return (
     <Box className={classes.skipToNextSectionWrapper}>
-      <Button className={classes.skipToNextSectionButton} onClick={skipToNextSection} aria-label="Hopp til neste">
+      <Fab className={classes.skipToNextSectionButton} onClick={skipToNextSection} aria-label="Hopp til neste">
         <ChevronRightRounded className={classes.icon} />
-      </Button>
+      </Fab>
     </Box>
   );
 };

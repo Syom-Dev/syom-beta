@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 // eslint-disable-next-line import/named
 import { Theme } from "@material-ui/core/styles";
+// eslint-disable-next-line import/named
 import { Link, withStyles, WithStyles } from "@material-ui/core";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -31,6 +32,7 @@ const styles = (theme: Theme): any => ({
 });
 
 const ScrollToMain: FC<WithStyles<typeof styles>> = ({ classes }) => (
+  // eslint-disable-next-line jsx-a11y/no-access-key
   <Link href="#top" className={classes.skipContent} accessKey="s">
         Hopp til hovedinnhold
   </Link>

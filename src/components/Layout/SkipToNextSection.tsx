@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 // eslint-disable-next-line import/named
 import { Theme } from "@material-ui/core/styles";
-import { Box, Fab, withStyles } from "@material-ui/core";
+// eslint-disable-next-line import/named
+import { Box, Fab, withStyles, WithStyles } from "@material-ui/core";
 import { ChevronRightRounded } from "@material-ui/icons";
 
 import { getVisibilityOfElement } from "../../utils/ElementUtils";
 
-interface SkipToNextSectionProps extends withStyles<typeof styles> {
+interface SkipToNextSectionProps extends WithStyles<typeof styles> {
   sectionIds: string[];
 }
 

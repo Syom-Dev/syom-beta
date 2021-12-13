@@ -6,6 +6,7 @@ import { Footer } from "../src/components/Footer";
 import SectionTwo from "../src/components/BetaPage/SectionTwo";
 import SectionThree from "../src/components/Forside/SectionThree";
 import SectionDonation from "../src/components/BetaPage/SectionDonation";
+import SkipToNextSection from "../src/components/Layout/SkipToNextSection";
 
 const Home: FC = () => (
   <Layout>
@@ -14,6 +15,7 @@ const Home: FC = () => (
     <SectionThree />
     <SectionDonation />
     <Footer />
+    <SkipToNextSection sectionIds={["hvorfor", "hvordan", "blimed", "donasjon"]} />
   </Layout>
 );
 
